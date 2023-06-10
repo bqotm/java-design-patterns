@@ -5,11 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@AllArgsConstructor
-@NoArgsConstructor
-public class ConcreteHandler implements Handler{
 
-    private Handler next;
+public class ConcreteHandler extends Handler{
+
 
     private final int N=8;
 
@@ -19,6 +17,6 @@ public class ConcreteHandler implements Handler{
             System.out.println("req handled successfully by handler1");
             return;
         }
-        next.handle(request);
+        handleNext(request);
     }
 }
