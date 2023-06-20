@@ -16,7 +16,7 @@ public class Zmain {
         mediator.addAirplane(jet1);
 
         cargo2.sendSignal("i am at alt 3z, 40m away from landing stage");
-
+        jet1.sendSignal("wait wait ! i'm on my exit");
 
     }
 
